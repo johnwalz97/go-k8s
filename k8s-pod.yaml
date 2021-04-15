@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-k8s-pod
+  labels:
+    app: go-k8s
+spec:
+  containers:
+    - name: go-k8s
+      image: johnwalz97/go-k8s:0.0.1
+      ports:
+        - containerPort: 8080
